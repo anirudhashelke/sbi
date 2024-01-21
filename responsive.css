@@ -1,0 +1,5 @@
+@media screen and (max-width:768) {
+    header .a-header-1 ul li a{
+        padding:0;
+    }
+}
