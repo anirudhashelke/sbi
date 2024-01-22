@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .a-login h6 {
+            font-size: 14px;
+            font-weight: bold;
+            color: #124c8c;
+        }
+
+        .a-login p {
+            color: #DB3C38;
+            font-size: 14px;
+        }
+
+        /* bannner */
+        main .a-banners .a-form h6 {
+            font-size: 12px;
+            color: #555;
+            ;
+        }
+
+        main .a-banners .a-form {
+            width: 50%;
+        }
+
+        main .a-banners .a-form h6 span {
+            font-size: 13px;
+            color: #DB3C38;
+
+        }
+
+        main .a-banners .a-form label {
+            font-size: 12px;
+            color: #111111;
+            font-weight: bold;
+
+        }
+
+        main .a-banners .a-keybord {
+            width: 50%;
+        }
+
+        main .a-banners .a-keybord h6 a {
+            color: #337ab7;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 400;
+
+        }
+
+        main .a-banners .a-keybord h6 a:hover {
+            text-decoration: underline;
+        }
+
+        main .a-banners .a-keybord .a-enable {
+            background-image: url("img/virtual.png");
+            height: 50px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main .a-costomer-1 {
+            background: #2b2f76;
+            padding: 10px;
+            width: 92.3%;
+        }
+
+        main .a-costomer-1 h6 {
+            font-size: 12px;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        main .a-costomer-1 ul {
+            color: #fff;
+            padding: 0;
+            padding-left: 20px
+        }
+
+        main .a-costomer-1 ul li a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        /* never */
+        main .a-report {
+            box-shadow: 0px 0px 10px #cfcfcf;
+            background: #fafafa;
+            border: 1px solid #eee;
+            min-height: 237px;
+        }
+
+        main .a-report .a-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            margin: auto;
+            color: #fff;
+            /* color: #1B75BC; */
+            background-color: #1B75BC;
+            margin-bottom: 10px;
+        }
+
+        main .a-report p {
+            font-size: 12px;
+            color: #555;
+            line-height: 26px;
+            text-align: justify;
+        }
+        main .a-report .a-reports ul li{
+            list-style: none;
+            text-align: center;
+            padding-bottom:5px;
+            border-bottom:1px dotted #857d7d;
+            
+        } 
+        main .a-report .a-reports ul li a{
+            color: #337ab7;
+            font-size: 12px;
+            text-decoration: none;
+        }
+        main .a-report .a-reports ul li a:hover{
+            text-decoration: underline;
+        }
+
+        /* last section */
+        main .a-provied ul{ 
+           list-style: square;
+           font-size: 12px;
+           line-height:2;
+           margin-bottom: 0;
+        }
+        main .a-provied ul li a{
+            text-decoration: none;
+            font-size: 12px;
+            color: #555;
+        }
+        /* footer */
+        footer .a-footer{
+            background: #414141;
+           border-top: 3px solid #1b75bc;
+           overflow: hidden;
+           padding: 10px 20px;
+        }
+        footer .a-footer-1{
+            background: #535353;
+            padding: 10px 20px;
+        } 
+        footer .a-footer-1 a{
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="container " style=" box-shadow: 0px 0px 10px #cfcfcf;">
+        <div class="row  d-flex justify-content-between">
+            <div class="col-12 col-md-2 mt-2  d-flex align-items-center">
+                <img src="img/logo.png" alt="" width="100" height="30">
+            </div>
+            <div class="a-header d-flex justify-content-end col-12 col-md-6   ">
+                <div class="d-flex " style="align-items: center;">
+                    <div class="a-logo"><img src="img/HomeLoanButton.png" alt=""></div>
+                    <ul class="  d-flex   " style="list-style: none;  font-size:13px;">
+                        <li><a href="#">About OnlineSBI</a></li>
+                        <li><a href="#">Forms</a></li>
+                        <li><a href="#">Net Banking Branches</a></li>
+                    </ul>
+                    <div class="ps-3">
+                        <select name="" id="lgn  "
+                            style="background-color: #0e6c5a !important;font-size: 12px; color: #fff251;">
+                            <option value="lgn">Language</option>
+                            <option value="lgn2">English</option>
+                            <option value="lgn3">hindi</option>
+                            <option value="lgn4">marathi</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12  d-flex  py-2  a-header-1 " style="background: #005292;">
+                <ul class="d-flex  ">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Products & Services</a></li>
+                    <li><a href="#">How Do I (Help)</a></li>
+                    <li><a href="#">Manage Debit Card E-Mandate</a></li>
+                    <li><a href="#">Contact Us</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-between a-login  align-items-center" style="background-color: #e8f3f9;">
+            <div class="col-12 col-md-2  text-center">
+                <h6>Login to OnlineSBI</h6>
+            </div>
+            <div class="col-12 col-md-7 ">
+                <marquee behavior="" direction="up">
+                    <p class="text-center">Dear Customer, Mandatory login and profile password change introduced for
+                        added security.</p>
+                </marquee>
+            </div>
+            <div class="col-12 col-md-3  text-center">
+                <h6>Welcome to Personal Internet Banking</h6>
+            </div>
+        </div>
+    </header>
+
+    <!-- banner -->
+    <main>
+        <div class="a-banners container " style="box-shadow: 0px 0px 10px #cfcfcf;">
+            <div class="row py-3">
+                <div class="col-12 col-md-6 d-flex ">
+                    <div class="bg-primar a-form ">
+                        <h6> (<span>CARE</span>: Username and password are case sensitive.)</h6>
+                        <form action="#">
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput" class="form-label">Username*</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">Password*</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput3" class="form-label">Enter the text as shown in the
+                                    image *</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2">
+                            </div>
+                            <label for="">Enter the text as shown in the image *</label>
+                            <div class="my-2 d-flex gap-3">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label text-danger" for="flexRadioDefault1">
+                                        Image Captcha
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-labe text-danger" for="flexRadioDefault2">
+                                        Audio Captcha
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <img src="img/simpleCaptchaServ.png" alt="" width="125"><i class="fa fa-refresh ps-1  "
+                                    style="font-size: 20px;  color: #486d90;" aria-hidden="true"></i>
+                            </div>
+                            <div class="mb-3 d-flex gap-2">
+                                <button class="text-white"
+                                    style="background: #486d90;padding: 5px 13px;border: none;">Login</button>
+                                <button class="text-white"
+                                    style="background: #486d90;padding: 5px 13px;border: none;">Reset</button>
+                            </div>
+                            <div class="mb-3">
+                                <p
+                                    style="font-size: 12px; color: #555; background-color:#f2f6f7; padding: 10px 0px;  width: 200%;">
+                                    For better security use Online Keyboard to login. <span
+                                        style="color: #005292; font-weight: bold;">More ...</span></p>
+                            </div>
+
+                        </form>
+
+                    </div>
+                    <div class=" a-keybord  ps-5 pt-5">
+                        <h6> <a href="#">New User ? Register here/Activate</a></h6><br>
+                        <h6><a href="#">Forgot Username / Login Password</a></h6>
+
+                        <div class=" a-enable d-flex  gap-2 mt-3">
+                            <input class="form-check-input" style="font-size: 15px; color: #555;" type="checkbox">
+                            <h6 style="font-size: 12px; color: #555;"> Enable Virtual Keyboard</h6>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 ">
+                    <div class="a-costomer">
+                        <img src="img/login_img.png" alt="">
+                    </div>
+                    <div class="a-costomer-1">
+                        <h6>Dear Customer,</h6>
+                        <ul>
+                            <li><a href="#">OTP based login & Mandatory login password change after 180 days introduced
+                                    for added security.</a></li>
+                            <li><a href="#">Please do not share OTP/password/user information with anyone. Bank never
+                                    asks for such information.</a></li>
+                            <li><a href="#">For better control & security of your account, you can Lock or Unlock your
+                                    INB access through link "Lock & Unlock User" available at bottom of this Page.</a>
+                            </li>
+                            <li><a href="#">Mandatory Profile password change after 365 days introduced for added
+                                    security.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- never -->
+        <section class="container">
+            <div class="row py-4 ">
+                <div class="col-12 col-md-4">
+                    <div class="a-report p-4  ">
+                        <div class="a-icon"><i class="fa fa-exclamation" aria-hidden="true"></i></div>
+                        <p>NEVER respond to any popup,email, SMS or phone call, no matter how appealing or official
+                            looking, seeking your personal information such as username, password(s), mobile number, ATM
+                            Card details, etc. Such communications are sent or created by fraudsters to trick you into
+                            parting with your credentials.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 ">
+                    <div class="a-report py-2 px-4">
+                        <div class=" d-flex justify-content-center mt-2 "><i style="font-size: 32px; color:#1B75BC ;" class="fa fa-wrench" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex a-reports">
+                            <ul>
+                                <li><a href="#">Complaints</a></li>
+                                <li><a href="#">Trouble logging in</a></li>
+                                <li><a href="#">Password Management</a></li>
+                                <li><a href="#">Security Tips</a></li>
+                                <li  style="border-bottom: none;"><a href="#">FAQ</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#"> About Phishing</a></li>
+                                <li><a href="#">Report Phishing</a></li>
+                                <li><a style=" color: #f00 !important;" href="#">Lock & Unlock User</a></li>
+                                <li style="border-bottom: none;"><a href="#">Block ATM Card</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-4 ">
+                    <div class="a-report p-4">
+                        <div class=" d-flex justify-content-center mb-2"> <i style="font-size: 32px; color:#1B75BC ;" class="fa fa-check-circle-o"
+                                aria-hidden="true"></i></div>
+                        <p>This site is certified by Verisign as a secure and trusted site. All information sent or
+                            received in this site is encrypted using 256-bit encryption</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- last section -->
+        <section class="container a-provied ">
+              <div style="background-color: #8fccc138; padding:10px 0px;">
+                <ul>
+                    <li><a href="#">Mandatory fields are marked with an asterisk (*)</a></li>
+                    <li><a href="#">Do not provide your username and password anywhere other than in this page</a></li>
+                    <li><a href="#">Your username and password are highly confidential. Never part with them.SBI will never ask for this information.</a></li>
+                </ul>
+              </div>
+        </section>
+
+    </main>
+    <!-- footer -->
+    <footer class="container" >
+       <div class="a-footer">
+        <img src="img/veriSign_logo.png" alt="">
+       </div>
+       <div class="a-footer-1 d-flex justify-content-between">
+        <a href="#">© State Bank of India (APM Id: Serv_Tran_552)</a>
+        <a href="#">Site best viewed at 1024 x 768 resolution in Microsoft Edge 79 +, Mozilla 96 +, Google Chrome 97 +</a>
+       </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

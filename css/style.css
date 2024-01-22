@@ -9,6 +9,7 @@
  header .a-header ul li{
    border-left:1px solid #888 ;
    padding-left: 10px;
+   padding-right: 10px
  }
  header .a-header ul li a{
    text-decoration: none;
@@ -16,9 +17,7 @@
  }
  header .a-header select{
    padding: 5px;
-   
  }
- 
  header .a-header-1 ul{
   display: flex;
   list-style: none;
@@ -44,41 +43,39 @@ transition: 0.5ms;
    background-image: url("/img/personal_banner.jpg");
    background-repeat: no-repeat;
    background-size:contain;
-   width: 98%;
-   /* background-position:20% 50%; */
+   width: 100%;
    box-sizing: border-box !important;
    overflow: hidden;
    height: 300px;
-   margin:10px 13px 0px 13px;
+   text-align: end;
+  
  }
  main .a-banner .a-banner-content{
-   text-align: end;
-   position: absolute;
-   right: 15px;
-   bottom: 94px;
+  position: absolute;
+  right: 0;
+  bottom: 94px;
  }
  main .a-banner .a-banner-content button{
-padding: 10px 50px;
-  background: #2b9dcc !important;
+     padding: 10px 50px;
+    background: #2b9dcc !important;
     color: #fff;
     display: block;
     font-size: 15px;
     font-weight: bold; 
  }
- main .a-banner .a-banner-content button:hover{
+ main .a-banner .a-banner-content  button:hover{
    color: #c1ecff;
    background: #007fb4 !important;
  }
- main .a-banner .a-banner-content p{
+ main .a-banner .a-banner-content   p{
    color: #10578d;
     font-weight: bold;
     font-size: 13px;
  }
- main .a-banner .a-banner-content ul{
+ main .a-banner .a-banner-content   ul{
    list-style: none;
  }
- 
- main .a-banner .a-banner-content ul li a{
+ main .a-banner .a-banner-content   ul li a{
    text-decoration: none;
    color: #1b75bc;
    font-size: 12px;

@@ -1,5 +1,73 @@
-@media screen and (max-width:768) {
+@media screen and (max-width:768px) {
     header .a-header-1 ul li a{
         padding:0;
+        font-size: 7px;
     }
+    header .a-header ul li a{
+        padding-right: 3px !important;
+        /* padding: 0 !important; */
+        font-size: 8px;
+    }
+    header .a-header-1 ul{
+        gap:10px;
+    }
+    main .a-banner .a-banner-content button{
+        padding:10px;
+        font-size: 12px;
+    }
+    header .a-header select{
+        font-size: 9px !important;
+    }
+    header .a-header select option{
+        font-size: 10px;
+    }
+    .a-logo img{
+        width:55px;   
+    }
+    main .a-banner{
+        position: relative;
+    }
+    
+    main .a-banner .a-banner-content{
+      position: absolute ;
+      top:4px !important;
+      padding: 0 !important;
+      padding-right: 10px !important;
+       margin: 0 !important;
+    }
+    main .a-banner .a-banner-content button{
+        font-size: 6px !important;
+        padding: 5px 10px !important;
+        border: none !important;
+    }
+    main .a-banner .a-banner-content   p{
+           font-size: 5px !important;
+           margin: 0 !important;
+           padding: 0 !important;
+    }
+    main .a-banner .a-banner-content   ul{
+       margin: 0 !important;
+       padding: 0 !important;
+    }
+    main .a-banner .a-banner-content   ul li a{
+      font-size: 5px !important;
+      padding: 0px 3px !important;
+      /* margin-bottom:-500px; */
+    }
+    
+    .a-enable h6{
+        font-size: 8px !important;
+        margin-bottom: 25px;
+    }
+    .a-enable input{
+        margin-bottom: 25px;
+        font-size: 9px !important;
+    }
+    .a-costomer img{
+        width:100%;
+    }
+    .a-costomer-1{
+        width:100% !important;
+    }
+
 }
