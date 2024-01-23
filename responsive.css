@@ -26,6 +26,7 @@
     }
     main .a-banner{
         position: relative;
+        height:80px !important;
     }
     
     main .a-banner .a-banner-content{
