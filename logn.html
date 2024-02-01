@@ -167,18 +167,20 @@
             font-size: 12px;
         }
          
-        
-/* .a_d {
+
+
+/*dynamic keyboard */
+.a_dynamic_keyboard {
     width: 98.5%;
 }
 
-.b_dyn {
+.a_dynamic_keyboard .a_keyborad_box {
     display: grid;
     background: #F0F5F7;
-    border: 1px solid #377292;
+    /* border: 1px solid #377292; */
     grid-template-columns: repeat(13, 1fr);
 }
-.b_dynam{
+.a_dynamic_keyboard .a_keyborad_box .a_key{
     border-bottom: 1px solid #377292;
     border-right: 1px solid #377292;
     height: 40px;
@@ -186,7 +188,7 @@
     display: flex;
     cursor: pointer;
     justify-content: center;
-} */
+}
          
     </style>
 
@@ -252,23 +254,25 @@
     <!-- banner -->
     <main>
         <div class="a-banners container " style="box-shadow: 0px 0px 10px #cfcfcf;">
+            <form action="">
             <div class="row py-3">
                 <div class="col-12 col-md-6 d-flex ">
                     <div class="bg-primar a-form ">
                         <h6> (<span>CARE</span>: Username and password are case sensitive.)</h6>
                         <form action="#">
                             <div class="mb-3">
-                                <label for="formGroupExampleInput" class="form-label">Username*</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput">
+                                <label for="username" class="form-label">Username*</label>
+                                <input onfocus="usernameFun()"
+                                type="text" class="form-control" id="username">
                             </div>
                             <div class="mb-3">
-                                <label for="formGroupExampleInput2" class="form-label">Password*</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput2">
+                                <label for="password" class="form-label">Password*</label>
+                                <input type="text" onfocus="passwordFun()" class="form-control" id="password">
                             </div>
                             <div class="mb-3">
-                                <label for="formGroupExampleInput3" class="form-label">Enter the text as shown in the
+                                <label for="captcha" class="form-label">Enter the text as shown in the
                                     image *</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput2">
+                                <input type="text" class="form-control" id="captcha">
                             </div>
                             <label for="">Enter the text as shown in the image *</label>
                             <div class="my-2 d-flex gap-3">
@@ -289,7 +293,7 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <img src="img/simpleCaptchaServ.png" alt="" width="125"><i class="fa fa-refresh ps-1  "
+                                <img  id="b_captcha_box"  src="img/simpleCaptchaServ.png" alt="" width="125"><i   id="refreshCaptcha" class="fa fa-refresh ps-1  "
                                     style="font-size: 20px;  color: #486d90;" aria-hidden="true"></i>
                             </div>
                             <div class="mb-3 d-flex gap-2">
@@ -304,23 +308,22 @@
                                     For better security use Online Keyboard to login. <span
                                         style="color: #005292; font-weight: bold;">More ...</span></p>
                             </div>
-
-                        </form>
-
                     </div>
                     <div class=" a-keybord  ps-5 pt-5">
                         <h6> <a href="#">New User ? Register here/Activate</a></h6><br>
                         <h6><a href="#">Forgot Username / Login Password</a></h6>
 
                         <div class=" a-enable d-flex  gap-2 mt-3">
-                            <input class="form-check-input" style="font-size: 15px; color: #555;" type="checkbox">
+                            <input class="form-check-input" style="font-size: 15px; color: #555;" type="checkbox" id="checkbox">
                             <h6 style="font-size: 12px; color: #555;"> Enable Virtual Keyboard</h6>
 
                         </div>
                     </div>
                 </div>
+            </form>
                 <div class="col-12 col-md-6 ">
-                    <div class="a-costomer">
+                    <div class="a_dynamic_image_content_box">
+                    <div class="a-costomer ">
                         <img src="img/login_img.png" alt="">
                     </div>
                     <div class="a-costomer-1">
@@ -337,8 +340,89 @@
                                     security.</a></li>
                         </ul>
                     </div>
-                </div>
+                    </div>
+
+
+
+                     <!--  -->
+                <div class="p-1 d-none a_dynamic_keyboard">
+                    <h5 class="text-center">Online Virtual Keyboard</h5>
+                    <div class="a_keyborad_box">
+                      <div class="a_key">~</div>
+                      <div class="a_key">!</div>
+                      <div class="a_key">@</div>
+                      <div class="a_key">#</div>
+                      <div class="a_key">$</div>
+                      <div class="a_key">%</div>
+                      <div class="a_key">^</div>
+                      <div class="a_key">&</div>
+                      <div class="a_key">*</div>
+                      <div class="a_key">(</div>
+                      <div class="a_key">)</div>
+                      <div class="a_key">_</div>
+                      <div class="a_key">+</div>
+                      <div class="a_key">`</div>
+                      <div class="a_key">8</div>
+                      <div class="a_key">3</div>
+                      <div class="a_key">4</div>
+                      <div class="a_key">5</div>
+                      <div class="a_key">6</div>
+                      <div class="a_key">1</div>
+                      <div class="a_key">0</div>
+                      <div class="a_key">9</div>
+                      <div class="a_key">2</div>
+                      <div class="a_key">7</div>
+                      <div class="a_key">-</div>
+                      <div class="a_key">=</div>
+                      <div class="a_key">q</div>
+                      <div class="a_key">w</div>
+                      <div class="a_key">t</div>
+                      <div class="a_key">e</div>
+                      <div class="a_key">r</div>
+                      <div class="a_key">o</div>
+                      <div class="a_key">i</div>
+                      <div class="a_key">y</div>
+                      <div class="a_key">u</div>
+                      <div class="a_key">p</div>
+                      <div class="a_key">{</div>
+                      <div class="a_key">}</div>
+                      <div class="a_key">|</div>
+                      <div class="a_key">d</div>
+                      <div class="a_key">a</div>
+                      <div class="a_key">g</div>
+                      <div class="a_key">f</div>
+                      <div class="a_key">s</div>
+                      <div class="a_key">i</div>
+                      <div class="a_key">h</div>
+                      <div class="a_key">j</div>
+                      <div class="a_key">k</div>
+                      <div class="a_key">[</div>
+                      <div class="a_key">]</div>
+                      <div class="a_key">\</div>
+                      <div class="a_key">/</div>
+                      <div class="a_key">c</div>
+                      <div class="a_key">z</div>
+                      <div class="a_key">v</div>
+                      <div class="a_key">x</div>
+                      <div class="a_key">n</div>
+                      <div class="a_key">b</div>
+                      <div class="a_key">m</div>
+                      <div class="a_key">/</div>
+                      <div class="a_key">></div>
+                      <div class="a_key">;</div>
+                      <div class="a_key">:</div>
+                      <div class="a_key">'</div>
+                      <div class="a_key">"</div>
+                      
+                    </div>
+                    <div class=" a_keyborad_box d-flex gap-5 w-100 " style=" border: 1px solid #377292;">
+                        <div class="a_key  text-center  " style=" flex: 2.11; font-size: 13px;font-weight:500;width: 50%;"  >CAPS LOCK</div>
+                        <div class="a_key " style="width: 50.8%; flex: 2.1; ">Clear</div>
+                    </div>
+                  </div>
+                </div> 
             </div>
+        </form>
         </div>
 
         
@@ -410,9 +494,25 @@
         <a href="#">Site best viewed at 1024 x 768 resolution in Microsoft Edge 79 +, Mozilla 96 +, Google Chrome 97 +</a>
        </div>
     </footer>
-
     
-         
+    <script>
+ 
+      const checkbox = document.getElementById("checkbox");
+      const imageBox = document.querySelector(".a_dynamic_image_content_box");
+      const keyBox = document.querySelector(".a_dynamic_keyboard");
+
+
+ checkbox.addEventListener("change", function (e) {
+   const isVisiable = e.target.checked;
+   if (!isVisiable) {
+     imageBox.classList.remove("d-none");
+     keyBox.classList.add("d-none");
+   } else {
+     keyBox.classList.remove("d-none");
+     imageBox.classList.add("d-none");
+   }
+ });
+   </script>
 </body>
 
 </html>
